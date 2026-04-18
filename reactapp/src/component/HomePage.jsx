@@ -11,6 +11,7 @@ function HomePage() {
 //         <button>Login</button>
 //     )
 //   }
+
     return (
         loggedin?<button>Logout</button>:<button>Login</button>
     )
