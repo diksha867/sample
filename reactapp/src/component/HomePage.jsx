@@ -15,6 +15,7 @@ function HomePage() {
     return (
         loggedin?<button>Logout</button>:<button>Login</button>
     )
+    
 }
 
 export default HomePage
