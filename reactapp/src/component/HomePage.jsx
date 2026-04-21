@@ -1,6 +1,7 @@
 import React from 'react'
 
 function HomePage() {
+    
   const loggedin=true;
 //   if(loggedin){
 //     return (
@@ -15,7 +16,7 @@ function HomePage() {
     return (
         loggedin?<button>Logout</button>:<button>Login</button>
     )
-    
+
 }
 
 export default HomePage
