@@ -5,6 +5,7 @@ import style1 from "../css/HomePage.module.css"
 import styled from "@emotion/styled"
 import { css } from '@emotion/react'
 import Axios from "axios";
+
 function Article(props) {
   const [count, setCount]=useState(0)
   const [name, setName]=useState("Alex")
