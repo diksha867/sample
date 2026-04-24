@@ -26,6 +26,7 @@ function Article(props) {
     // }
     //}
 
+    
     const fetchData=async()=>{
     try{
       setloading(true)
