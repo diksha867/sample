@@ -14,6 +14,7 @@ function Contact() {
         console.log(data)
         console.log(name,email,message)
     }
+    
   return (
     <div>
       <form onSubmit={handleSubmit}>
