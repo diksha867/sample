@@ -5,8 +5,13 @@ function Contact() {
     const [email,setEmail]=useState('')
     const [message,setMessage]=useState('')
 
-    const handleSubmit=(event)=>{
+    const handleSubmit=(data)=>{
         event.preventDefault()
+        if(email.endsWith("krmu.edu.in")){
+            alert("Email is invalid")
+            return
+        }
+        console.log(data)
         console.log(name,email,message)
     }
   return (
