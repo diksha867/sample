@@ -1,20 +1,21 @@
 import React from 'react'
-import { Link ,Navlink} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+
+
 
 function TopBar() {
   return (
     <div>
       <h1>Logo</h1>
       <ul>
-        <link to="/"><li>HomePage</li></link>
-        <Navlink style={({isActive})=>({color:isActive?"red":"black"})} to="/"><li>HomePage</li></Navlink>
-        <Navlink style={({isActive})=>({color:isActive?"red":"black"})} to="/article"><li>Article</li></Navlink>
-        <link to="/contact"><li>Contact</li></link>
-        <link to="/Article"><li>Article</li></link>
+        <Link to="/"><li>HomePage</li></Link>
+        <NavLink style={({isActive})=>({color:isActive?"red":"blue"})} to="/"><li>HomePage</li></NavLink>
+        <NavLink style={({isActive})=>({color:isActive?"red":"blue"})} to="/article"><li>Article</li></NavLink>
+        <Link to="/article"><li>Article</li></Link>
+        <Link to="/contact"><li>Contact</li></Link>
       </ul>
     </div>
   )
 }
 
 export default TopBar
-

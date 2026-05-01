@@ -1,7 +1,7 @@
 import React from 'react'
+import TopBar from './TopBar';
 
 function HomePage() {
-    
   const loggedin=true;
 //   if(loggedin){
 //     return (
@@ -12,13 +12,12 @@ function HomePage() {
 //         <button>Login</button>
 //     )
 //   }
-
     return (
-        loggedin?<button>Logout</button>:<button>Login</button>
+        <>
+        <TopBar />
+        {loggedin?<button>Logout</button>:<button>Login</button>}
+        </>
     )
-
 }
 
 export default HomePage
-
-
